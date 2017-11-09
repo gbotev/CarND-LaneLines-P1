@@ -19,10 +19,10 @@ My pipeline consisted of 2 main logical steps which are defined as separate func
 * Deriving two lines that limit the current lane 
 
 To perform the first step I needed to:
-* 1. Convert the image from 3 channel to a single channel (gray) image
-* 2. Blur it in order to smooth out pixel artefacts and other imperfections
-* 3. Detect the edges
-* 4. Filter out the pixels from regions that are not important and return only the "important" edges
+1. Convert the image from 3 channel to a single channel (gray) image
+2. Blur it in order to smooth out pixel artefacts and other imperfections
+3. Detect the edges
+4. Filter out the pixels from regions that are not important and return only the "important" edges
 
 ![alt text][image1]
 
@@ -46,7 +46,7 @@ If there is a car in front of us it would cause problems to our current pipeline
 When changing lanes there would be three lines to consider and our pipeline allows for only two.
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Possible improve ments
 
 Possible improvements to our pipeline can be:
 * Using the stream instead of separate frames to get smoother results (e.g. Kalman filter to smooth out our lines prediction and fix problems with no lines detected)
