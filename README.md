@@ -27,8 +27,8 @@ To perform the first step I needed to:
 ![alt text][image1]
 
 For the second step I needed to:
-* 1. Find out good values for the parameters of Hough Line Transform and detect the lines
-* 2. Draw just two lines on the image
+1. Find out good values for the parameters of Hough Line Transform and detect the lines
+2. Draw just two lines on the image
 
 ![alt text][image2]
 
