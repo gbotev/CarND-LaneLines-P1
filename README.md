@@ -34,11 +34,13 @@ To perform the first step I needed to:
 * 2. Blur it in order to smooth out pixel artefacts and other imperfections
 * 3. Detect the edges
 * 4. Filter out the pixels from regions that are not important and return only the "important" edges
+
 ![alt text][image1]
 
 For the second step I needed to:
 * 1. Find out good values for the parameters of Hough Line Transform and detect the lines
 * 2. Draw just two lines on the image
+
 ![alt text][image2]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by selecting only lines with slope between 0.5 and 1 for left lane and -0.5 and -1 for right. Then I averaged all the coefficients for beginnings and ends of lines and got the end points of a single line. After that I derived the equation for this line and found the X coordinates for Y at bottom and two-thirds of the image, so I can draw a line between these points.
